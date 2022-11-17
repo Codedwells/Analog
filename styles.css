@@ -1,0 +1,114 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.clock {
+	height: 300px;
+	width: 300px;
+	border: 7px solid gray;
+	border-radius: 50%;
+	position: absolute;
+    background-color: rgb(253, 221, 183);
+}
+
+.wrapper {
+	width: 400px;
+	height: 450px;
+    border-radius: 10rem;
+    background-color: rgb(227, 235, 241);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    box-shadow: 5px 5px 20px rgb(211, 201, 201);
+}
+
+.digital {
+	background-color: cadetblue;
+	position: absolute;
+	bottom: 288px;
+	padding: 3px;
+	font-weight: 600;
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: inset 5px 5px 8px;
+}
+
+#hourHand {
+	position: absolute;
+	background-color: brown;
+	width: 8px;
+	height: 80px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	left: 150px;
+	top: 70px;
+    z-index: 3;
+	transform-origin: 0 100%;
+    box-shadow: 2px 3px 5px gray;
+}
+#minutesHand {
+	position: absolute;
+	background-color: seagreen;
+	width: 5px;
+	height: 112px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	left: 150px;
+	top: 37px;
+    z-index: 3;
+	transform-origin: 0 100%;
+    box-shadow: 2px 3px 5px gray;
+}
+#secondsHand {
+	position: absolute;
+	background-color: skyblue;
+	width: 4px;
+	height: 128px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	left: 150px;
+	top: 21px;
+    z-index: 3;
+	transform-origin: 0 100%;
+    box-shadow: 2px 3px 5px gray;
+}
+
+.centre {
+	position: absolute;
+	background-color: gray;
+	height: 32px;
+	width: 32px;
+	left: 134px;
+	top: 132px;
+    z-index: 4;
+	border-radius: 50%;
+}
+
+p {
+	position: absolute;
+	font-weight: 600;
+	font-family: "poppins";
+	font-size: 1.4em;
+}
+
+.nums12 {
+	left: 144px;
+	top: -16px;
+}
+
+.nums3 {
+	left: 283px;
+	top: 112px;
+}
+
+.nums6 {
+	top: 248px;
+	left: 144px;
+}
+
+.nums9 {
+	top: 112px;
+}
